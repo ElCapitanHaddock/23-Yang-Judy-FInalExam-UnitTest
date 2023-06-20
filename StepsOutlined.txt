@@ -1,0 +1,19 @@
+
+
+My Outline for Completing the Steps:
+
+1. Extending the add method for StringCalculator class to accommodate the new requirements
+
+First I'll add a locally scoped variable in the iteration loop through the numbers to store the actual number being considered.
+Then I'll run said variable through two conditions:
+* if the number is greater than 1000, ignore and do not add to the cumulative
+* if the number is negative, throw an exception with the message "Negatives not allowed"
+
+2. Write a Test class that focuses solely on testing the new requirements (Extended Functionalities)
+
+Since the extended functionalities are just two edge bound cases that result in divergent behavior,
+I would simply write 4 test cases in total:
+* 1 test case where neither edge bound is triggered, and the operation is successful
+* 1 test case where just the >1000 bound is tested
+* 1 test case where the negatives exception is tested
+* 1 test case where both edge bounds are triggered
